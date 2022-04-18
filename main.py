@@ -4,17 +4,22 @@
     multip([1,2,3,4]) debería devolver 24.
 """
 
+from lib2to3.pytree import convert
+
+
 def sum(lista):
     s = 0
     for i in lista:
         s = s + i
     return s
 
+
 def mult(lista):
     s = 1
     for i in lista:
         s = s * i
     return s
+
 
 """
     Definir una función inversa() que calcule la inversión de una cadena. Por ejemplo la cadena
@@ -36,11 +41,14 @@ def inversa(cadena):
 
 
 def es_Polidromo(cadena):
+    convert = cadena.lower()
+    print(convert)
     cadena2 = ""
-    for i in cadena:
+    for i in convert:
         cadena2 = i + cadena2
-        if cadena2 == cadena:
+        if cadena2 == convert:
             return True
+
     return False
 
 
@@ -57,15 +65,19 @@ def superposicion(lista1, lista2):
                 return True
     return False
 
+
 """
     Definir una función generar_n_caracteres() que tome un entero n y devuelva el caracter multiplicado por n. 
     Por ejemplo: generar_n_caracteres(5, "x") debería devolver "xxxxx".
 """
 
+
 def generar_Caracteres(val1, val2):
     for i in range(val1):
-        print (val2, end="")
+        print(val2, end="")
     print("\n")
+
+
 """
     Definir un histograma procedimiento() que tome una lista de números enteros e imprima un histograma en la 
     pantalla. Ejemplo: procedimiento([4, 9, 7]) debería imprimir lo siguiente:
@@ -74,18 +86,19 @@ def generar_Caracteres(val1, val2):
     *********
     *******
 """
+
+
 def procedimiento(lista):
     caracter = "*"
     for i in lista:
-        print (i * caracter)
-    
-    
-    
+        print(i * caracter)
+
+
 if __name__ == "__main__":
     print(sum([1, 2, -3, 4]))
     print(mult([1, 2, 3, -4]))
     print(inversa("Estoy probando"))
-    print(es_Polidromo("radar"))
+    print(es_Polidromo("Radar"))
     print("===================")
     print(superposicion([2, 3, 4, 5], [10, 0, 6, 7]))
     generar_Caracteres(10, "*")
