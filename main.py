@@ -92,7 +92,7 @@ def procedimiento(lista):
     caracter = "*"
     for i in lista:
         print(i * caracter)
-
+        
 
 if __name__ == "__main__":
     print(sum([1, 2, -3, 4]))
