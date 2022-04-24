@@ -10,13 +10,11 @@ numeros = []
 
 
 def funcion(cadena):
-
-    letras = []
     for i in cadena:
         try:
             numeros.append(int(i))
         except ValueError:
-            letras.append(i)
+            pass
     return numeros
 
 
@@ -32,6 +30,7 @@ def sumarNumerosLista(num):
     for i in lista:
         suma += i
     return suma
+
 
 if __name__ == "__main__":
     cad = "3ha4sa2df3as5f3ad5a4sdf8df6"
