@@ -3,6 +3,7 @@
     los digitos que no están presentes en niguno de ellos
 """
 
+
 def separateDigits(lista):
     var = lista
     convertTo = ''.join([str(i) for i in var])
