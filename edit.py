@@ -13,7 +13,6 @@ def isYearLeap(year):
     elif year % 4 == 0 and year % 100 == 0 and year % 400 == 0:  # divisible entre 4, 100 y 400, ES BISIESTO
         return True
 
-
 for i in range(len(testData)):
     yr = testData[i]
     print(yr, "->", end="")
@@ -21,4 +20,4 @@ for i in range(len(testData)):
     if result == testResults[i]:
         print("OK")
     else:
-        print("Error")
+        print("error")
