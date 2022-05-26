@@ -11,3 +11,10 @@ imagen = img.imread(res.json()['sprites']['front_default'])
 plt.title(res.json()['name'])
 implot = plt.imshow(imagen)
 plt.show()
+
+move_ejex = []
+move_ejey = []
+
+move_s = res.json()
+
+for i in range
